@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    " # ",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "alienscience:moon_stone"
+    }
+  },
+  "result": {
+    "item": "alienscience:alien_finder"
+  }
+}
