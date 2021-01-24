@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "alienscience:alien_finder"
+  },
+  "result": "alienscience:edible_alien_finder",
+  "experience": 0.35,
+  "cookingtime": 100
+}

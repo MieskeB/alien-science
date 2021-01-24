@@ -16,12 +16,15 @@ public class AlienScience implements ModInitializer {
 
 	public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ItemGroup.REDSTONE));
 
-	public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
+	public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+
+	public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ItemGroup.FOOD).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
 
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("alienscience", "alien_finder"), ALIEN_FINDER);
 		Registry.register(Registry.BLOCK, new Identifier("alienscience", "moon_stone"), MOON_STONE);
 		Registry.register(Registry.ITEM, new Identifier("alienscience", "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+		Registry.register(Registry.ITEM, new Identifier("alienscience", "edible_alien_finder"), EDIBLE_ALIEN_FINDER);
 	}
 }
