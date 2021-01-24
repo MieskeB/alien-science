@@ -12,20 +12,20 @@
   ],
   "contact": {
     "homepage": "https://michelbijnen.nl/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/MieskeB/alien-science"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "CC BY-NC-SA 3.0",
+  "icon": "assets/alienscience/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "nl.michelbijnen.minecraft.alien.science.AlienScience"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "alienscience.mixins.json"
   ],
 
   "depends": {
