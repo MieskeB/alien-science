@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "alienscience:block/machineblock_top",
+    "bottom": "alienscience:block/machineblock_top",
+    "side": "alienscience:block/oxygen_generator_front"
+  }
+}

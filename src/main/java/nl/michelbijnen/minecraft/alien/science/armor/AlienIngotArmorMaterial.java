@@ -5,10 +5,9 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import nl.michelbijnen.minecraft.alien.science.AlienScience;
 import nl.michelbijnen.minecraft.alien.science.RegisterItems;
 
-public class AlienArmorMaterial implements ArmorMaterial {
+public class AlienIngotArmorMaterial implements ArmorMaterial {
     // helmet, chestplate, leggings, boots
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
     private static final int[] PROTECTION_VALUES = new int[] {1, 2, 3, 1};
@@ -35,12 +34,12 @@ public class AlienArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(RegisterItems.ALIEN_HEAD);
+        return Ingredient.ofItems(RegisterItems.ALIEN_INGOT);
     }
 
     @Override
     public String getName() {
-        return "Alien Head";
+        return "alien_ingot";
     }
 
     @Override
