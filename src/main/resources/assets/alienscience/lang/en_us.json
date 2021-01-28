@@ -4,13 +4,13 @@
 
   "advancements.alienscience.aliens.new_opportunity.title": "New Opportunity",
   "advancements.alienscience.aliens.new_opportunity.description": "Find an alien ore",
-
   "advancements.alienscience.moon.alien_terrain.title": "Alien Terrain",
   "advancements.alienscience.moon.alien_terrain.description": "Enter a completely new terrain",
 
   "block.alienscience.moon_stone": "Moon Stone",
   "block.alienscience.moon_gravel": "Moon Gravel",
   "block.alienscience.moon_dust": "Moon Dust",
+  "block.alienscience.moon_plant": "Moon Plant",
   "block.alienscience.oxygen_generator": "Oxygen Generator",
   "item.alienscience.alien_finder": "Alien Finder",
   "item.alienscience.edible_alien_finder": "Edible Alien Finder",

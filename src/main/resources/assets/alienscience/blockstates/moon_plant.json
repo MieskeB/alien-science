@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "decayed=false": { "model": "alienscience:block/moon_plant" },
+    "decayed=true": { "model": "alienscience:block/moon_plant2" }
+  }
+}

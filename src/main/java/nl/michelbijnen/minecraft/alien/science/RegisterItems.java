@@ -23,6 +23,7 @@ import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.StructureFeature;
 import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotArmorMaterial;
 import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotBaseArmor;
+import nl.michelbijnen.minecraft.alien.science.block.MoonPlant;
 import nl.michelbijnen.minecraft.alien.science.food.AlienFinderFoodComponent;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentFeature;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentGenerator;
@@ -44,6 +45,8 @@ public class RegisterItems {
     public static final Block MOON_DUST = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F, 0.5F).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
     public static final Block MOON_GRAVEL = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.6F, 0.6F).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS));
     public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+    public static final MoonPlant MOON_PLANT = new MoonPlant();
+
     public static final Block MOB_TESTER = new Block(FabricBlockSettings.of(Material.STONE).strength(1F, 6F).sounds(BlockSoundGroup.GLASS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block OXYGEN_GENERATOR = new Block(FabricBlockSettings.of(Material.METAL).strength(5F, 6F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
@@ -94,6 +97,8 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_gravel"), new BlockItem(MOON_GRAVEL, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_stone"), MOON_STONE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_plant"), MOON_PLANT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_plant"), new BlockItem(MOON_PLANT, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
     }
 
     private static void registerAlienIngot() {
