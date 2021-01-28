@@ -1,4 +1,4 @@
-package nl.michelbijnen.minecraft.alien.science;
+package nl.michelbijnen.minecraft.alien.science.structures;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.structure.*;
@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ServerWorldAccess;
+import nl.michelbijnen.minecraft.alien.science.AlienScience;
+import nl.michelbijnen.minecraft.alien.science.RegisterItems;
 
 import java.util.List;
 import java.util.Random;
@@ -25,14 +27,14 @@ public class TestingTentGenerator {
         private final Identifier template;
 
         public TestingTentPiece(StructureManager structureManager, CompoundTag compoundTag) {
-            super(AlienScience.TESTING_TENT_PIECE, compoundTag);
+            super(RegisterItems.TESTING_TENT_PIECE, compoundTag);
             this.template = new Identifier(compoundTag.getString("Template"));
             this.rotation = BlockRotation.valueOf(compoundTag.getString("Rot"));
             this.initializeStructureData(structureManager);
         }
 
         public TestingTentPiece(StructureManager structureManager, BlockPos pos, Identifier template, BlockRotation rotation) {
-            super(AlienScience.TESTING_TENT_PIECE, 0);
+            super(RegisterItems.TESTING_TENT_PIECE, 0);
             this.pos = pos;
             this.rotation = rotation;
             this.template = template;

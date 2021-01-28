@@ -1,4 +1,4 @@
-package nl.michelbijnen.minecraft.alien.science;
+package nl.michelbijnen.minecraft.alien.science.food;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

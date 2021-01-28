@@ -1,4 +1,4 @@
-package nl.michelbijnen.minecraft.alien.science;
+package nl.michelbijnen.minecraft.alien.science.structures;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.structure.StructureManager;

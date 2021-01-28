@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "alienscience:item/alien_head",
+    "layer1": "alienscience:item/alien_head_overlay"
+  }
+}
