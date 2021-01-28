@@ -22,15 +22,18 @@ import net.minecraft.world.gen.feature.ConfiguredStructureFeature;
 import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.StructureFeature;
 import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotArmorMaterial;
+import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotBaseArmor;
 import nl.michelbijnen.minecraft.alien.science.food.AlienFinderFoodComponent;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentFeature;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentGenerator;
 
 public class RegisterItems {
 
+    public static String MODID = "alienscience";
+
     public static final ItemGroup ALIEN_SCIENCE_ITEM_GROUP = FabricItemGroupBuilder.create(
-            new Identifier("alienscience", "alienscience"))
-            .icon(() -> new ItemStack(RegisterItems.ALIEN_INGOT_HELMET))
+            new Identifier(MODID, "alienscience"))
+            .icon(() -> new ItemStack(RegisterItems.ALIEN_FINDER))
             .build();
 
     public static final Block MOON_DUST = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F, 0.5F).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
@@ -41,9 +44,9 @@ public class RegisterItems {
     public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP).maxCount(1));
     public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
 
-    public static final ArmorMaterial alienIngotArmorMaterial = new AlienIngotArmorMaterial();
     public static final Item ALIEN_INGOT = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP));
-    public static final Item ALIEN_INGOT_HELMET = new ArmorItem(alienIngotArmorMaterial, EquipmentSlot.HEAD, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP));
+
+    public static final ArmorMaterial ALIEN_INGOT_ARMOR = new AlienIngotArmorMaterial();
 
 
     public static final StructurePieceType TESTING_TENT_PIECE = TestingTentGenerator.TestingTentPiece::new;
@@ -51,33 +54,42 @@ public class RegisterItems {
     public static final ConfiguredStructureFeature<?, ?> TESTING_TENT_CONFIGURED = TESTING_TENT_STRUCTURE.configure(DefaultFeatureConfig.DEFAULT);
 
     public static void register() {
-        Registry.register(Registry.BLOCK, new Identifier("alienscience", "moon_dust"), MOON_DUST);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "moon_dust"), new BlockItem(MOON_DUST, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
-        Registry.register(Registry.BLOCK, new Identifier("alienscience", "moon_stone"), MOON_STONE);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
-        Registry.register(Registry.BLOCK, new Identifier("alienscience", "mob_tester"), MOB_TESTER);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "mob_tester"), new BlockItem(MOB_TESTER, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
-        Registry.register(Registry.BLOCK, new Identifier("alienscience", "oxygen_generator"), OXYGEN_GENERATOR);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "oxygen_generator"), new BlockItem(OXYGEN_GENERATOR, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        registerMoon();
 
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "alien_finder"), ALIEN_FINDER);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "edible_alien_finder"), EDIBLE_ALIEN_FINDER);
+        registerAlienIngot();
 
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "alien_ingot"), ALIEN_INGOT);
-        Registry.register(Registry.ITEM, new Identifier("alienscience", "alien_ingot_helmet"), ALIEN_INGOT_HELMET);
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "mob_tester"), MOB_TESTER);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "mob_tester"), new BlockItem(MOB_TESTER, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "oxygen_generator"), OXYGEN_GENERATOR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "oxygen_generator"), new BlockItem(OXYGEN_GENERATOR, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_finder"), ALIEN_FINDER);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "edible_alien_finder"), EDIBLE_ALIEN_FINDER);
 
 
-        Registry.register(Registry.STRUCTURE_PIECE, new Identifier("alienscience", "testing_tent_piece"), TESTING_TENT_PIECE);
-        FabricStructureBuilder.create(new Identifier("alienscience", "testing_tent"), TESTING_TENT_STRUCTURE)
+        Registry.register(Registry.STRUCTURE_PIECE, new Identifier(MODID, "testing_tent_piece"), TESTING_TENT_PIECE);
+        FabricStructureBuilder.create(new Identifier(MODID, "testing_tent"), TESTING_TENT_STRUCTURE)
                 .step(GenerationStep.Feature.SURFACE_STRUCTURES)
                 .defaultConfig(32, 8, 12345)
                 .adjustsSurface()
                 .register();
 
         RegistryKey<ConfiguredStructureFeature<?, ?>> myConfigured = RegistryKey.of(Registry.CONFIGURED_STRUCTURE_FEATURE_WORLDGEN,
-                new Identifier("alienscience", "testing_tent"));
+                new Identifier(MODID, "testing_tent"));
         BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, myConfigured.getValue(), TESTING_TENT_CONFIGURED);
 
         BiomeModifications.addStructure(BiomeSelectors.foundInOverworld(), myConfigured);
+    }
+
+    private static void registerMoon() {
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_dust"), MOON_DUST);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_dust"), new BlockItem(MOON_DUST, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_stone"), MOON_STONE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+    }
+
+    private static void registerAlienIngot() {
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot"), ALIEN_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot_helmet"), new AlienIngotBaseArmor(ALIEN_INGOT_ARMOR, EquipmentSlot.HEAD));
     }
 }

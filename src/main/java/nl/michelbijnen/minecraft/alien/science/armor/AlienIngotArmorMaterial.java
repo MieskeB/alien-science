@@ -14,7 +14,7 @@ public class AlienIngotArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 5;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 25;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class AlienIngotArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 5;
+        return 25;
     }
 
     @Override
@@ -39,12 +39,14 @@ public class AlienIngotArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
+        // TODO change this to alien_ingot when this textures file is targeted
         return "alien_ingot";
+//        return "diamond";
     }
 
     @Override
     public float getToughness() {
-        return 1.0F;
+        return 2F;
     }
 
     @Override
