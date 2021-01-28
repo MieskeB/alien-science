@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "alienscience:alien_ingot"
+    },
+    "title": {
+      "translate": "advancements.alienscience.new_opportunity.title"
+    },
+    "description": {
+      "translate": "advancements.alienscience.new_opportunity.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "alien_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "alienscience:alien_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "alien_ingot"
+    ]
+  ]
+}
