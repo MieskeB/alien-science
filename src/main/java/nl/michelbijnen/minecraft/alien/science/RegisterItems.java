@@ -2,6 +2,7 @@ package nl.michelbijnen.minecraft.alien.science;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.structure.v1.FabricStructureBuilder;
@@ -9,6 +10,7 @@ import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.Material;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
@@ -97,6 +99,7 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_gravel"), new BlockItem(MOON_GRAVEL, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_stone"), MOON_STONE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
+        BlockRenderLayerMap.INSTANCE.putBlock(RegisterItems.MOON_PLANT, RenderLayer.getCutout());
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_plant"), MOON_PLANT);
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_plant"), new BlockItem(MOON_PLANT, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
     }
