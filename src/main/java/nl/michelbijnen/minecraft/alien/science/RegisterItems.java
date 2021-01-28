@@ -31,20 +31,26 @@ public class RegisterItems {
 
     public static String MODID = "alienscience";
 
-    public static final ItemGroup ALIEN_SCIENCE_ITEM_GROUP = FabricItemGroupBuilder.create(
-            new Identifier(MODID, "alienscience"))
+    public static final ItemGroup ALIEN_SCIENCE_DEFAULT_ITEM_GROUP = FabricItemGroupBuilder.create(
+            new Identifier(MODID, "alienscience_default_group"))
             .icon(() -> new ItemStack(RegisterItems.ALIEN_FINDER))
             .build();
 
+    public static final ItemGroup ALIEN_SCIENCE_MOON_ITEM_GROUP = FabricItemGroupBuilder.create(
+            new Identifier(MODID, "alienscience_moon_group"))
+            .icon(() -> new ItemStack(RegisterItems.MOON_STONE))
+            .build();
+
     public static final Block MOON_DUST = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F, 0.5F).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
+    public static final Block MOON_GRAVEL = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.6F, 0.6F).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS));
     public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block MOB_TESTER = new Block(FabricBlockSettings.of(Material.STONE).strength(1F, 6F).sounds(BlockSoundGroup.GLASS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block OXYGEN_GENERATOR = new Block(FabricBlockSettings.of(Material.METAL).strength(5F, 6F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
-    public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP).maxCount(1));
-    public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
+    public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP).maxCount(1));
+    public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
 
-    public static final Item ALIEN_INGOT = new Item(new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP));
+    public static final Item ALIEN_INGOT = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP));
 
     public static final ArmorMaterial ALIEN_INGOT_ARMOR = new AlienIngotArmorMaterial();
 
@@ -59,9 +65,9 @@ public class RegisterItems {
         registerAlienIngot();
 
         Registry.register(Registry.BLOCK, new Identifier(MODID, "mob_tester"), MOB_TESTER);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "mob_tester"), new BlockItem(MOB_TESTER, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "mob_tester"), new BlockItem(MOB_TESTER, new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "oxygen_generator"), OXYGEN_GENERATOR);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "oxygen_generator"), new BlockItem(OXYGEN_GENERATOR, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "oxygen_generator"), new BlockItem(OXYGEN_GENERATOR, new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP)));
 
         Registry.register(Registry.ITEM, new Identifier(MODID, "alien_finder"), ALIEN_FINDER);
         Registry.register(Registry.ITEM, new Identifier(MODID, "edible_alien_finder"), EDIBLE_ALIEN_FINDER);
@@ -83,9 +89,11 @@ public class RegisterItems {
 
     private static void registerMoon() {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_dust"), MOON_DUST);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_dust"), new BlockItem(MOON_DUST, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_dust"), new BlockItem(MOON_DUST, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_gravel"), MOON_GRAVEL);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_gravel"), new BlockItem(MOON_GRAVEL, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_stone"), MOON_STONE);
-        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
     }
 
     private static void registerAlienIngot() {

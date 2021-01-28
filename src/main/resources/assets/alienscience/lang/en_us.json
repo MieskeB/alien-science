@@ -1,8 +1,10 @@
 {
-  "itemGroup.alienscience.alienscience": "Alien Science",
+  "itemGroup.alienscience.alienscience_default_group": "Alien Science",
+  "itemGroup.alienscience.alienscience_moon_group": "Alien Science Moon",
   "advancements.alienscience.new_opportunity.title": "A new ore?",
   "advancements.alienscience.new_opportunity.description": "Find a new ore",
   "block.alienscience.moon_stone": "Moon Stone",
+  "block.alienscience.moon_gravel": "Moon Gravel",
   "block.alienscience.moon_dust": "Moon Dust",
   "block.alienscience.oxygen_generator": "Oxygen Generator",
   "item.alienscience.alien_finder": "Alien Finder",

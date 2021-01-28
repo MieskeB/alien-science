@@ -8,6 +8,6 @@ import nl.michelbijnen.minecraft.alien.science.RegisterItems;
 
 public class AlienIngotBaseArmor extends ArmorItem {
     public AlienIngotBaseArmor(ArmorMaterial material, EquipmentSlot slot) {
-        super(material, slot, new Item.Settings().group(RegisterItems.ALIEN_SCIENCE_ITEM_GROUP));
+        super(material, slot, new Item.Settings().group(RegisterItems.ALIEN_SCIENCE_DEFAULT_ITEM_GROUP));
     }
 }
