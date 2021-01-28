@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.structure.v1.FabricStructureBuilder;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -26,6 +27,7 @@ public class AlienScience implements ModInitializer {
 
 	public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ItemGroup.REDSTONE));
 
+	public static final Block MOON_DUST = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F, 0.5F).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
 	public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
 	public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ItemGroup.FOOD).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
@@ -39,6 +41,8 @@ public class AlienScience implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("alienscience", "alien_finder"), ALIEN_FINDER);
+		Registry.register(Registry.BLOCK, new Identifier("alienscience", "moon_dust"), MOON_DUST);
+		Registry.register(Registry.ITEM, new Identifier("alienscience", "moon_dust"), new BlockItem(MOON_DUST, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.BLOCK, new Identifier("alienscience", "moon_stone"), MOON_STONE);
 		Registry.register(Registry.ITEM, new Identifier("alienscience", "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
 		Registry.register(Registry.ITEM, new Identifier("alienscience", "edible_alien_finder"), EDIBLE_ALIEN_FINDER);
