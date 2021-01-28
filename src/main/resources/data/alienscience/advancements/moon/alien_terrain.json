@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "alienscience:alien_ingot"
+      "item": "alienscience:moon_stone"
     },
     "title": {
-      "translate": "advancements.alienscience.aliens.new_opportunity.title"
+      "translate": "advancements.alienscience.moon.alien_terrain.title"
     },
     "description": {
-      "translate": "advancements.alienscience.aliens.new_opportunity.description"
+      "translate": "advancements.alienscience.moon.alien_terrain.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,12 +16,12 @@
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
   },
   "criteria": {
-    "alien_ingot": {
+    "moon_stone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "alienscience:alien_ingot"
+            "item": "alienscience:moon_stone"
           }
         ]
       }
@@ -29,7 +29,7 @@
   },
   "requirements": [
     [
-      "alien_ingot"
+      "moon_stone"
     ]
   ]
 }
