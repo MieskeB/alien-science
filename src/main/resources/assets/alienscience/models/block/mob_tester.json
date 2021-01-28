@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "all": "alienscience:block/mob_tester"
+    "top": "alienscience:block/mob_tester_top",
+    "bottom": "alienscience:block/mob_tester_top",
+    "side": "alienscience:block/mob_tester_front"
   }
 }
