@@ -39,9 +39,7 @@ public class AlienIngotArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        // TODO change this to alien_ingot when this textures file is targeted
         return "alien_ingot";
-//        return "diamond";
     }
 
     @Override
