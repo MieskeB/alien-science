@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "alienscience:moon_ore"
+  },
+  "result": "alienscience:alien_ingot",
+  "experience": 0.35,
+  "cookingtime": 50
+}

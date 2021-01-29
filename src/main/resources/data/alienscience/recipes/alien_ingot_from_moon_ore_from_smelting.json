@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "alienscience:alien_finder"
+    "item": "alienscience:moon_ore"
   },
-  "result": "alienscience:edible_alien_finder",
+  "result": "alienscience:alien_ingot",
   "experience": 0.35,
   "cookingtime": 100
 }

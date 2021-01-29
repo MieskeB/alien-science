@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "alienscience:moon_ore"
+  },
+  "result": "alienscience:alien_ingot",
+  "experience": 0.35,
+  "cookingtime": 200
+}

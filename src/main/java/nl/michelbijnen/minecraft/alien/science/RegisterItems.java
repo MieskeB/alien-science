@@ -47,6 +47,7 @@ public class RegisterItems {
     public static final Block MOON_DUST = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.5F, 0.5F).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
     public static final Block MOON_GRAVEL = new FallingBlock(FabricBlockSettings.of(Material.SOIL).strength(0.6F, 0.6F).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS));
     public static final Block MOON_STONE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5F, 6F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+    public static final Block MOON_ORE = new Block(FabricBlockSettings.of(Material.STONE).strength(3F, 3F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final MoonPlant MOON_PLANT = new MoonPlant();
 
     public static final Block MOB_TESTER = new Block(FabricBlockSettings.of(Material.STONE).strength(1F, 6F).sounds(BlockSoundGroup.GLASS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
@@ -99,6 +100,8 @@ public class RegisterItems {
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_gravel"), new BlockItem(MOON_GRAVEL, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_stone"), MOON_STONE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_stone"), new BlockItem(MOON_STONE, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_ore"), MOON_ORE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "moon_ore"), new BlockItem(MOON_ORE, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
         BlockRenderLayerMap.INSTANCE.putBlock(RegisterItems.MOON_PLANT, RenderLayer.getCutout());
         Registry.register(Registry.BLOCK, new Identifier(MODID, "moon_plant"), MOON_PLANT);
         Registry.register(Registry.ITEM, new Identifier(MODID, "moon_plant"), new BlockItem(MOON_PLANT, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
