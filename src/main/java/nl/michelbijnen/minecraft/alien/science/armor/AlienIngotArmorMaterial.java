@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import nl.michelbijnen.minecraft.alien.science.RegisterItems;
+import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
 
 public class AlienIngotArmorMaterial implements ArmorMaterial {
     // helmet, chestplate, leggings, boots

@@ -9,8 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ServerWorldAccess;
-import nl.michelbijnen.minecraft.alien.science.AlienScience;
-import nl.michelbijnen.minecraft.alien.science.RegisterItems;
+import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
 
 import java.util.List;
 import java.util.Random;

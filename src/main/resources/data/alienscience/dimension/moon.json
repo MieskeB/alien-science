@@ -1,0 +1,10 @@
+{
+  "type": "alienscience:moon",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "fixed",
+      "biome": "alienscience:moon"
+    }
+  }
+}
