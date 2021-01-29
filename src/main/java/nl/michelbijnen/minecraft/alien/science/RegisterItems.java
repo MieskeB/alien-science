@@ -112,6 +112,9 @@ public class RegisterItems {
     private static void registerAlienIngot() {
         Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot"), ALIEN_INGOT);
         Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot_helmet"), new AlienIngotBaseArmor(ALIEN_INGOT_ARMOR, EquipmentSlot.HEAD));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot_chestplate"), new AlienIngotBaseArmor(ALIEN_INGOT_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot_leggings"), new AlienIngotBaseArmor(ALIEN_INGOT_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "alien_ingot_boots"), new AlienIngotBaseArmor(ALIEN_INGOT_ARMOR, EquipmentSlot.FEET));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "alien_crate"), ALIEN_CRATE);
         Registry.register(Registry.ITEM, new Identifier(MODID, "alien_crate"), new BlockItem(ALIEN_CRATE, new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP)));
     }

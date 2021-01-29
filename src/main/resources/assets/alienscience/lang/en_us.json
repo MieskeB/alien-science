@@ -19,5 +19,9 @@
   "item.alienscience.edible_alien_finder": "Edible Alien Finder",
   "block.alienscience.mob_tester": "Mob Tester",
   "item.alienscience.alien_ingot": "Alien Ingot",
-  "item.alienscience.alien_ingot_helmet": "Alien Helmet"
+
+  "item.alienscience.alien_ingot_helmet": "Alien Helmet",
+  "item.alienscience.alien_ingot_chestplate": "Alien Chestplate",
+  "item.alienscience.alien_ingot_leggings": "Alien Leggings",
+  "item.alienscience.alien_ingot_boots": "Alien Boots"
 }
