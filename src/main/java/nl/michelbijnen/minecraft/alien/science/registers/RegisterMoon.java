@@ -48,9 +48,9 @@ public class RegisterMoon {
 
     private static final ConfiguredSurfaceBuilder<TernarySurfaceConfig> MOON_SURFACE_BUILDER = SurfaceBuilder.DEFAULT
             .withConfig(new TernarySurfaceConfig(
-                    MOON_STONE.getDefaultState(),
+                    MOON_DUST.getDefaultState(),
                     MOON_GRAVEL.getDefaultState(),
-                    MOON_DUST.getDefaultState()));
+                    MOON_STONE.getDefaultState()));
 
     private static final Biome MOON = createMoon();
 
@@ -71,6 +71,9 @@ public class RegisterMoon {
 
         Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new Identifier(AlienScience.MODID, "moonland"), MOON_SURFACE_BUILDER);
         Registry.register(BuiltinRegistries.BIOME, MOON_KEY.getValue(), MOON);
+
+        OverworldBiomes.addContinentalBiome(MOON_KEY, OverworldClimate.TEMPERATE, 2D);
+        OverworldBiomes.addContinentalBiome(MOON_KEY, OverworldClimate.COOL, 2D);
     }
 
     private static Biome createMoon() {

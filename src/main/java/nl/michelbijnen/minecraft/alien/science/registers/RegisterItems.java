@@ -24,6 +24,7 @@ import nl.michelbijnen.minecraft.alien.science.AlienScience;
 import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotArmorMaterial;
 import nl.michelbijnen.minecraft.alien.science.armor.AlienIngotBaseArmor;
 import nl.michelbijnen.minecraft.alien.science.food.AlienFinderFoodComponent;
+import nl.michelbijnen.minecraft.alien.science.item.AlienFinder;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentFeature;
 import nl.michelbijnen.minecraft.alien.science.structures.TestingTentGenerator;
 
@@ -37,7 +38,7 @@ public class RegisterItems {
     public static final Block MOB_TESTER = new Block(FabricBlockSettings.of(Material.STONE).strength(1F, 6F).sounds(BlockSoundGroup.GLASS).breakByTool(FabricToolTags.PICKAXES).requiresTool());
     public static final Block OXYGEN_GENERATOR = new Block(FabricBlockSettings.of(Material.METAL).strength(5F, 6F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
 
-    public static final Item ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP).maxCount(1));
+    public static final Item ALIEN_FINDER = new AlienFinder();
     public static final Item EDIBLE_ALIEN_FINDER = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP).food(AlienFinderFoodComponent.EDIBLE_ALIEN_FINDER));
 
     public static final Item ALIEN_INGOT = new Item(new Item.Settings().group(ALIEN_SCIENCE_DEFAULT_ITEM_GROUP));
