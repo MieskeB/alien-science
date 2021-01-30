@@ -1,0 +1,68 @@
+{
+  "depth": 0.3,
+  "scale": 0.03,
+  "downfall": 0.1,
+  "temperature": -100,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "music": {
+      "sound": "",
+      "min_delay": 1200,
+      "max_delay": 3600,
+      "replace_current_music": true
+    },
+    "sky_color": 0,
+    "fog_color": 1447445,
+    "water_color": 4013374,
+    "water_fog_color": 4802890
+  },
+  "surface_builder": "alienscience:moon_plains",
+  "carvers": {
+    "air": [
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+
+    ],
+    [],
+    [
+      "alienscience:moon_stone",
+      "alienscience:moon_dust",
+      "alienscience:moon_gravel",
+      "alienscience:moon_ore"
+    ],
+    [],
+    [],
+    []
+  ],
+  "starts": [
+  ],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:creeper",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 5
+      }
+    ],
+    "creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": true
+}
