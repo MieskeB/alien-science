@@ -1,5 +1,6 @@
 package nl.michelbijnen.minecraft.alien.science.world.dimension;
 
+import net.fabricmc.fabric.api.dimension.v1.FabricDimensions;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;

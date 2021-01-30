@@ -18,6 +18,7 @@ import net.minecraft.util.registry.Registry;
 import nl.michelbijnen.minecraft.alien.science.AlienScience;
 import nl.michelbijnen.minecraft.alien.science.block.MoonPlant;
 import nl.michelbijnen.minecraft.alien.science.world.biome.AlienScienceBiomes;
+import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
 
 public class RegisterMoon {
 
@@ -45,7 +46,5 @@ public class RegisterMoon {
         BlockRenderLayerMap.INSTANCE.putBlock(MOON_PLANT, RenderLayer.getCutout());
         Registry.register(Registry.BLOCK, new Identifier(AlienScience.MODID, "moon_plant"), MOON_PLANT);
         Registry.register(Registry.ITEM, new Identifier(AlienScience.MODID, "moon_plant"), new BlockItem(MOON_PLANT, new Item.Settings().group(ALIEN_SCIENCE_MOON_ITEM_GROUP)));
-
-        AlienScienceBiomes.register();
     }
 }

@@ -7,7 +7,7 @@
     "BuiltinBiomesAccessor"
   ],
   "client": [
-    "ExampleMixin"
+    "client.WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

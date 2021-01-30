@@ -1,5 +1,6 @@
 package nl.michelbijnen.minecraft.alien.science.world.biome.source;
 
+import net.minecraft.world.biome.BuiltinBiomes;
 import nl.michelbijnen.minecraft.alien.science.mixin.BuiltinBiomesAccessor;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
@@ -53,7 +54,7 @@ public class MoonBiomeSource extends BiomeSource {
     public Biome getBiomeForNoiseGen(int biomeX, int biomeY, int biomeZ) {
         if (!this.initialized) {
             if (registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)) != -1) {
-//                BuiltinBiomes.BY_RAW_ID.put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)), AlienScienceBiomes.Moon.MOON_PLAINS);
+                BuiltinBiomes.BY_RAW_ID.put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)), AlienScienceBiomes.Moon.MOON_PLAINS);
 
                 this.biomes.clear();
                 this.biomes.add(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS));
