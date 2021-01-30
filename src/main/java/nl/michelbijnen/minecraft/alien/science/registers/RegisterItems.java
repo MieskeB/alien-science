@@ -1,7 +1,7 @@
 package nl.michelbijnen.minecraft.alien.science.registers;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+//import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+//import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.structure.v1.FabricStructureBuilder;
@@ -77,7 +77,7 @@ public class RegisterItems {
                 new Identifier(AlienScience.MODID, "testing_tent"));
         BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_STRUCTURE_FEATURE, myConfigured.getValue(), TESTING_TENT_CONFIGURED);
 
-        BiomeModifications.addStructure(BiomeSelectors.foundInOverworld(), myConfigured);
+//        BiomeModifications.addStructure(BiomeSelectors.foundInOverworld(), myConfigured);
     }
 
     private static void registerMoon() {

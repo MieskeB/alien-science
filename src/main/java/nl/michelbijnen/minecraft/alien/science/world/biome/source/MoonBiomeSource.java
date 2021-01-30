@@ -1,15 +1,14 @@
 package nl.michelbijnen.minecraft.alien.science.world.biome.source;
 
+import nl.michelbijnen.minecraft.alien.science.mixin.BuiltinBiomesAccessor;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.Lifecycle;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.mixin.biome.BuiltinBiomesAccessor;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryLookupCodec;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BuiltinBiomes;
 import net.minecraft.world.biome.source.BiomeLayerSampler;
 import net.minecraft.world.biome.source.BiomeSource;
 import nl.michelbijnen.minecraft.alien.science.world.biome.AlienScienceBiomes;
