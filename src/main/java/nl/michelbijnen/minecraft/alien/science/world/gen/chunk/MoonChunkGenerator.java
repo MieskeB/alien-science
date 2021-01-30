@@ -33,7 +33,7 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.StructureAccessor;
 import net.minecraft.world.gen.chunk.*;
 import net.minecraft.world.gen.feature.StructureFeature;
-import nl.michelbijnen.minecraft.alien.science.registers.RegisterMoon;
+import nl.michelbijnen.minecraft.alien.science.block.AlienScienceBlock;
 import nl.michelbijnen.minecraft.alien.science.world.biome.source.MoonBiomeSource;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -74,7 +74,7 @@ public class MoonChunkGenerator extends ChunkGenerator {
                         new SlideConfig(-10, 3, 0), new SlideConfig(-30, 2, -1),
                         1, 2, 1.0D, -0.46875D, true,
                         false, false, false),
-                RegisterMoon.MOON_STONE.getDefaultState(), AIR, -10, 0, 63, false));
+                AlienScienceBlock.MOON_STONE.getDefaultState(), AIR, -10, 0, 63, false));
     }
 
     private MoonChunkGenerator(BiomeSource biomeSource, long seed, @NotNull Supplier<ChunkGeneratorSettings> settingsSupplier) {

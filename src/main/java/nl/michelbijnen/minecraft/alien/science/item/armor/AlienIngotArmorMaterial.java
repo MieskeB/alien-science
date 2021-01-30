@@ -1,11 +1,11 @@
-package nl.michelbijnen.minecraft.alien.science.armor;
+package nl.michelbijnen.minecraft.alien.science.item.armor;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
+import nl.michelbijnen.minecraft.alien.science.item.AlienScienceItem;
 
 public class AlienIngotArmorMaterial implements ArmorMaterial {
     // helmet, chestplate, leggings, boots
@@ -34,7 +34,7 @@ public class AlienIngotArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(RegisterItems.ALIEN_INGOT);
+        return Ingredient.ofItems(AlienScienceItem.ALIEN_INGOT);
     }
 
     @Override

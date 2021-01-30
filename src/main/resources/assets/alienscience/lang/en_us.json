@@ -1,6 +1,6 @@
 {
-  "itemGroup.alienscience.alienscience_default_group": "Alien Science",
-  "itemGroup.alienscience.alienscience_moon_group": "Alien Science Moon",
+  "itemGroup.alienscience.default": "Alien Science",
+  "itemGroup.alienscience.moon": "Alien Science Moon",
 
   "advancements.alienscience.aliens.new_opportunity.title": "New Opportunity",
   "advancements.alienscience.aliens.new_opportunity.description": "Find an alien ore",
@@ -14,15 +14,21 @@
   "block.alienscience.moon_plant": "Moon Plant",
   "block.alienscience.moon_ore": "Moon Ore",
 
-  "block.alienscience.alien_crate": "Alien Crate",
+  "block.alienscience.mob_tester": "Mob Tester",
   "block.alienscience.oxygen_generator": "Oxygen Generator",
+
+  "block.alienscience.alien_crate": "Alien Crate",
   "item.alienscience.alien_finder": "Alien Finder",
   "item.alienscience.edible_alien_finder": "Edible Alien Finder",
-  "block.alienscience.mob_tester": "Mob Tester",
   "item.alienscience.alien_ingot": "Alien Ingot",
 
   "item.alienscience.alien_ingot_helmet": "Alien Helmet",
   "item.alienscience.alien_ingot_chestplate": "Alien Chestplate",
   "item.alienscience.alien_ingot_leggings": "Alien Leggings",
-  "item.alienscience.alien_ingot_boots": "Alien Boots"
+  "item.alienscience.alien_ingot_boots": "Alien Boots",
+
+  "commands.alienscience.dimensiontp.failure.dimension": "The world does not exist",
+  "commands.alienscience.dimensiontp.failure.entity": "Something went wrong",
+  "commands.alienscience.dimensiontp.success.single": "Successfully teleported",
+  "commands.alienscience.dimensiontp.success.multiple": "Multiple entities successfully teleported"
 }

@@ -9,13 +9,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.ServerWorldAccess;
+import nl.michelbijnen.minecraft.alien.science.Constants;
 import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
 
 import java.util.List;
 import java.util.Random;
 
 public class TestingTentGenerator {
-    private static final Identifier TESTING_TENT = new Identifier("alienscience", "testingtent/testingtent");
+    private static final Identifier TESTING_TENT = new Identifier(Constants.MODID, Constants.Structures.TestingTent.PATH);
 
     public static void addPieces(StructureManager manager, BlockPos pos, BlockRotation rotation, List<StructurePiece> pieces) {
         pieces.add(new TestingTentPiece(manager, pos, TESTING_TENT, rotation));

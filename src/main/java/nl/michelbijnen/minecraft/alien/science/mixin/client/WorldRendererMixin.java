@@ -15,6 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Matrix4f;
 import nl.michelbijnen.minecraft.alien.science.AlienScience;
+import nl.michelbijnen.minecraft.alien.science.Constants;
 import nl.michelbijnen.minecraft.alien.science.accessor.WorldRendererAccessor;
 import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
 import org.spongepowered.asm.mixin.Final;
@@ -32,8 +33,8 @@ import java.util.Set;
 @Mixin(WorldRenderer.class)
 @Environment(EnvType.CLIENT)
 public class WorldRendererMixin implements WorldRendererAccessor {
-    private static final Identifier EARTH_TEXTURE = new Identifier(AlienScience.MODID, "textures/gui/celestialbodies/earth.png");
-    private static final Identifier SUN_TEXTURE = new Identifier(AlienScience.MODID, "textures/gui/celestialbodies/sun.png");
+    private static final Identifier EARTH_TEXTURE = new Identifier(Constants.MODID, "textures/gui/celestialbodies/earth.png");
+    private static final Identifier SUN_TEXTURE = new Identifier(Constants.MODID, "textures/gui/celestialbodies/sun.png");
 
     @Shadow
     @Final
