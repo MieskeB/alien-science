@@ -8,6 +8,7 @@ import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
 import nl.michelbijnen.minecraft.alien.science.server.command.AlienScienceCommands;
 import nl.michelbijnen.minecraft.alien.science.world.biome.AlienScienceBiomes;
 import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
+import nl.michelbijnen.minecraft.alien.science.world.gen.feature.AlienScienceFeature;
 
 public class AlienScience implements ModInitializer {
 
@@ -23,5 +24,6 @@ public class AlienScience implements ModInitializer {
         AlienScienceBiomes.register();
         AlienScienceDimensions.register();
         AlienScienceCommands.register();
+        AlienScienceFeature.register();
     }
 }

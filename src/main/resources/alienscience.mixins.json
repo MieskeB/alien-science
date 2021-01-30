@@ -4,6 +4,7 @@
   "package": "nl.michelbijnen.minecraft.alien.science.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "BlockStateProviderTypeAccessor",
     "BuiltinBiomesAccessor",
     "DimensionTypeMixin"
   ],

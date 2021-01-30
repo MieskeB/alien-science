@@ -11,25 +11,14 @@
     },
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
   },
   "criteria": {
-    "moon_stone": {
-      "trigger": "minecraft:inventory_changed",
+    "moon_plains": {
+      "trigger": "minecraft:location",
       "conditions": {
-        "items": [
-          {
-            "item": "alienscience:moon_stone"
-          }
-        ]
+        "dimension": "alienscience:moon"
       }
     }
-  },
-  "requirements": [
-    [
-      "moon_stone"
-    ]
-  ]
+  }
 }

@@ -54,4 +54,8 @@ public class Constants {
             public static final String PIECE = "testing_tent_piece";
         }
     }
+
+    public static class Feature {
+        public static final String MOON_PLANT_PROVIDER = "moon_plant_provider";
+    }
 }
