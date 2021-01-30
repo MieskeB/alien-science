@@ -1,6 +1,8 @@
 package nl.michelbijnen.minecraft.alien.science.mixin.client;
 
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gl.VertexBuffer;
 import net.minecraft.client.render.*;
@@ -16,6 +18,7 @@ import nl.michelbijnen.minecraft.alien.science.AlienScience;
 import nl.michelbijnen.minecraft.alien.science.accessor.WorldRendererAccessor;
 import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
 import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -26,6 +29,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Random;
 import java.util.Set;
 
+@Mixin(WorldRenderer.class)
+@Environment(EnvType.CLIENT)
 public class WorldRendererMixin implements WorldRendererAccessor {
     private static final Identifier EARTH_TEXTURE = new Identifier(AlienScience.MODID, "textures/gui/celestialbodies/earth.png");
     private static final Identifier SUN_TEXTURE = new Identifier(AlienScience.MODID, "textures/gui/celestialbodies/sun.png");
