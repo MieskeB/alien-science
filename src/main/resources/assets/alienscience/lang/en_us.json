@@ -16,8 +16,8 @@
 
   "block.alienscience.mob_tester": "Mob Tester",
   "block.alienscience.oxygen_generator": "Oxygen Generator",
-
   "block.alienscience.alien_crate": "Alien Crate",
+
   "item.alienscience.alien_finder": "Alien Finder",
   "item.alienscience.edible_alien_finder": "Edible Alien Finder",
   "item.alienscience.alien_ingot": "Alien Ingot",
@@ -26,6 +26,8 @@
   "item.alienscience.alien_ingot_chestplate": "Alien Chestplate",
   "item.alienscience.alien_ingot_leggings": "Alien Leggings",
   "item.alienscience.alien_ingot_boots": "Alien Boots",
+
+  "entity.alienscience.alien": "Alien",
 
   "commands.alienscience.dimensiontp.failure.dimension": "The world does not exist",
   "commands.alienscience.dimensiontp.failure.entity": "Something went wrong",
