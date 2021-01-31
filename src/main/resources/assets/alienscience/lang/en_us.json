@@ -4,8 +4,11 @@
 
   "advancements.alienscience.aliens.new_opportunity.title": "New Opportunity",
   "advancements.alienscience.aliens.new_opportunity.description": "Find an alien ore",
-  "advancements.alienscience.moon.alien_terrain.title": "Alien Terrain",
-  "advancements.alienscience.moon.alien_terrain.description": "Enter a completely new terrain",
+  "advancements.alienscience.aliens.alien_hunter.title": "Alien Hunter",
+  "advancements.alienscience.aliens.alien_hunter.description": "Kill an alien",
+
+  "advancements.alienscience.moon.moon.title": "Alien Terrain",
+  "advancements.alienscience.moon.moon.description": "Enter a completely new terrain",
 
   "biome.alienscience.moon": "Moon",
   "block.alienscience.moon_stone": "Moon Stone",

@@ -4,13 +4,12 @@
       "item": "alienscience:moon_stone"
     },
     "title": {
-      "translate": "advancements.alienscience.moon.alien_terrain.title"
+      "translate": "advancements.alienscience.moon.moon.title"
     },
     "description": {
-      "translate": "advancements.alienscience.moon.alien_terrain.description"
+      "translate": "advancements.alienscience.moon.moon.description"
     },
     "frame": "task",
-    "show_toast": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
   },
   "criteria": {

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "alienscience:alien_ingot_helmet"
+    },
+    "title": {
+      "translate": "advancements.alienscience.aliens.alien_hunter.title"
+    },
+    "description": {
+      "translate": "advancements.alienscience.aliens.alien_hunter.description"
+    },
+    "frame": "goal",
+    "parent": "alienscience:aliens/new_opportunity",
+    "hidden": false
+  },
+  "criteria": {
+    "alien_ingot": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killed_alien": [
+          {
+            "type": "alienscience:alien"
+          }
+        ]
+      }
+    }
+  }
+}
