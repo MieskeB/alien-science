@@ -22,6 +22,9 @@
   "entrypoints": {
     "main": [
       "nl.michelbijnen.minecraft.alien.science.AlienScience"
+    ],
+    "client": [
+      "nl.michelbijnen.minecraft.alien.science.AlienScienceClient"
     ]
   },
   "mixins": [

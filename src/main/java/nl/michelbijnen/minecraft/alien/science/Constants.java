@@ -58,4 +58,11 @@ public class Constants {
     public static class Feature {
         public static final String MOON_PLANT_PROVIDER = "moon_plant_provider";
     }
+
+    public static class Entities {
+        public static class Alien {
+            public static final String NAME = "alien";
+            public static final String PATH_TO_ALIEN = "textures/entity/alien/alien.png";
+        }
+    }
 }

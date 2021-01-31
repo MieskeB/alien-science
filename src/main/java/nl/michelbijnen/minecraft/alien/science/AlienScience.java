@@ -2,6 +2,7 @@ package nl.michelbijnen.minecraft.alien.science;
 
 import net.fabricmc.api.ModInitializer;
 import nl.michelbijnen.minecraft.alien.science.block.AlienScienceBlock;
+import nl.michelbijnen.minecraft.alien.science.entity.AlienScienceEntityTypes;
 import nl.michelbijnen.minecraft.alien.science.group.AlienScienceGroup;
 import nl.michelbijnen.minecraft.alien.science.item.AlienScienceItem;
 import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
@@ -25,5 +26,6 @@ public class AlienScience implements ModInitializer {
         AlienScienceDimensions.register();
         AlienScienceCommands.register();
         AlienScienceFeature.register();
+        AlienScienceEntityTypes.register();
     }
 }
