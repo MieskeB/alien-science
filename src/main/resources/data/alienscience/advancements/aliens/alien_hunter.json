@@ -1,4 +1,5 @@
 {
+  "parent": "alienscience:aliens/new_opportunity",
   "display": {
     "icon": {
       "item": "alienscience:alien_ingot_helmet"
@@ -9,9 +10,7 @@
     "description": {
       "translate": "advancements.alienscience.aliens.alien_hunter.description"
     },
-    "frame": "goal",
-    "parent": "alienscience:aliens/new_opportunity",
-    "hidden": false
+    "frame": "goal"
   },
   "criteria": {
     "alien_ingot": {
