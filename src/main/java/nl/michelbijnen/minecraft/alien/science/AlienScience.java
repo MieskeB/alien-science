@@ -7,8 +7,10 @@ import nl.michelbijnen.minecraft.alien.science.group.AlienScienceGroup;
 import nl.michelbijnen.minecraft.alien.science.item.AlienScienceItem;
 import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
 import nl.michelbijnen.minecraft.alien.science.server.command.AlienScienceCommands;
+import nl.michelbijnen.minecraft.alien.science.structure.AlienScienceStructure;
 import nl.michelbijnen.minecraft.alien.science.world.biome.AlienScienceBiomes;
 import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
+import nl.michelbijnen.minecraft.alien.science.world.gen.carver.AlienScienceCarver;
 import nl.michelbijnen.minecraft.alien.science.world.gen.feature.AlienScienceFeature;
 
 public class AlienScience implements ModInitializer {
@@ -20,12 +22,14 @@ public class AlienScience implements ModInitializer {
         AlienScienceItem.register();
 
         //TODO move this in future to structure file
-        RegisterItems.register();
+//        RegisterItems.register();
 
         AlienScienceBiomes.register();
         AlienScienceDimensions.register();
         AlienScienceCommands.register();
         AlienScienceFeature.register();
         AlienScienceEntityTypes.register();
+        AlienScienceStructure.register();
+        AlienScienceCarver.register();
     }
 }

@@ -65,4 +65,8 @@ public class Constants {
             public static final String PATH_TO_ALIEN = "textures/entity/alien/alien.png";
         }
     }
+
+    public static class Carver {
+        public static final String MOON_CAVE = "moon_cave";
+    }
 }

@@ -20,6 +20,7 @@
   "surface_builder": "alienscience:moon_plains",
   "carvers": {
     "air": [
+      "alienscience:moon_plains_cave"
     ]
   },
   "features": [
@@ -38,17 +39,16 @@
     []
   ],
   "starts": [
+    {
+      "config": {
+      },
+      "type": "alienscience:testing_tent"
+    }
   ],
   "spawners": {
     "monster": [
       {
-        "type": "minecraft:spider",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 5
-      },
-      {
-        "type": "minecraft:creeper",
+        "type": "alienscience:alien",
         "weight": 100,
         "minCount": 4,
         "maxCount": 5
@@ -60,5 +60,5 @@
     "misc": []
   },
   "spawn_costs": {},
-  "player_spawn_friendly": true
+  "player_spawn_friendly": false
 }
