@@ -13,7 +13,7 @@ import java.util.function.LongFunction;
 
 public class MoonBiomeLayers {
     public static int MOON_PLAINS_ID = -1;
-    public static int MOON_PLAINS_ROCKS_ID = -1;
+    public static int MOON_PLAINS_VALLEY_ID = -1;
 
     public static Registry<Biome> registry;
 
@@ -45,8 +45,7 @@ public class MoonBiomeLayers {
     public static BiomeLayerSampler build(long seed, int biomeSize, Registry<Biome> registry) {
         if (MOON_PLAINS_ID == -1 || MOON_PLAINS_ID != registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS))) {
             MOON_PLAINS_ID = registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS));
-            MOON_PLAINS_ROCKS_ID = registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS));
-//            MOON_HIGHLANDS_VALLEY_ID = registry.getRawId(registry.get(GalacticraftBiomes.Moon.HIGHLANDS_VALLEY));
+            MOON_PLAINS_VALLEY_ID = registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY));
 //            MOON_MARE_PLAINS_ID = registry.getRawId(registry.get(GalacticraftBiomes.Moon.MARE_PLAINS));
 //            MOON_MARE_ROCKS_ID = registry.getRawId(registry.get(GalacticraftBiomes.Moon.MARE_ROCKS));
 //            MOON_MARE_EDGE_ID = registry.getRawId(registry.get(GalacticraftBiomes.Moon.MARE_EDGE));

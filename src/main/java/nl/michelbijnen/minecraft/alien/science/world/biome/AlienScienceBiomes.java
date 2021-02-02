@@ -11,7 +11,7 @@ public class AlienScienceBiomes {
 
     public static class Moon {
         public static final RegistryKey<Biome> MOON_PLAINS = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.PLAINS));
-        public static final RegistryKey<Biome> MOON_PLAINS_ROCKS = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.PLAINS_ROCKS));
+        public static final RegistryKey<Biome> MOON_PLAINS_VALLEY = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.PLAINS_VALLEY));
 
         private static void init() {
         }

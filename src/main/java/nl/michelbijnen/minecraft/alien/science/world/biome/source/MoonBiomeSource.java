@@ -36,7 +36,7 @@ public class MoonBiomeSource extends BiomeSource {
 
         if (!BuiltinBiomesAccessor.getBY_RAW_ID().containsValue(AlienScienceBiomes.Moon.MOON_PLAINS)) {
             BuiltinBiomesAccessor.getBY_RAW_ID().put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)), AlienScienceBiomes.Moon.MOON_PLAINS);
-            BuiltinBiomesAccessor.getBY_RAW_ID().put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS)), AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS);
+            BuiltinBiomesAccessor.getBY_RAW_ID().put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY)), AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY);
         }
     }
 
@@ -56,11 +56,11 @@ public class MoonBiomeSource extends BiomeSource {
         if (!this.initialized) {
             if (registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)) != -1) {
                 BuiltinBiomes.BY_RAW_ID.put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS)), AlienScienceBiomes.Moon.MOON_PLAINS);
-                BuiltinBiomes.BY_RAW_ID.put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS)), AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS);
+                BuiltinBiomes.BY_RAW_ID.put(registry.getRawId(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY)), AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY);
 
                 this.biomes.clear();
                 this.biomes.add(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS));
-                this.biomes.add(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_ROCKS));
+                this.biomes.add(registry.get(AlienScienceBiomes.Moon.MOON_PLAINS_VALLEY));
                 this.structureFeatures.clear();
                 this.topMaterials.clear();
                 this.initialized = true;

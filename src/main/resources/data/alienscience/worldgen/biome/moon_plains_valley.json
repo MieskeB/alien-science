@@ -1,5 +1,5 @@
 {
-  "depth": 0.3,
+  "depth": -0.3,
   "scale": 0.03,
   "downfall": 0,
   "temperature": -100,
@@ -17,7 +17,7 @@
     "water_color": 0,
     "water_fog_color": 0
   },
-  "surface_builder": "alienscience:moon_plains_rocks",
+  "surface_builder": "alienscience:moon_plains_valley",
   "carvers": {
     "air": [
       "alienscience:moon_plains_cave"
@@ -25,9 +25,7 @@
   },
   "features": [
     [],
-    [
-      "alienscience:moon_rock"
-    ],
+    [],
     [],
     [],
     [],
