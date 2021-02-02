@@ -9,6 +9,11 @@ public enum MoonPlainsLayer implements InitLayer {
 
     @Override
     public int sample(LayerRandomnessSource context, int x, int y) {
-        return MoonBiomeLayers.MOON_PLAINS_ID;
+        int i = context.nextInt(10);
+        if (i < 9) {
+            return MoonBiomeLayers.MOON_PLAINS_ID;
+        } else {
+            return MoonBiomeLayers.MOON_PLAINS_ROCKS_ID;
+        }
     }
 }

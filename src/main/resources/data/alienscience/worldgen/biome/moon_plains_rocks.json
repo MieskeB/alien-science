@@ -1,0 +1,65 @@
+{
+  "depth": 0.3,
+  "scale": 0.03,
+  "downfall": 0,
+  "temperature": -100,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "music": {
+      "sound": "",
+      "min_delay": 1200,
+      "max_delay": 3600,
+      "replace_current_music": true
+    },
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0
+  },
+  "surface_builder": "alienscience:moon_plains_rocks",
+  "carvers": {
+    "air": [
+      "alienscience:moon_plains_cave"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "alienscience:moon_rock"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "alienscience:moon_ore"
+    ],
+    [],
+    [],
+    []
+  ],
+  "starts": [
+    {
+      "config": {
+      },
+      "type": "alienscience:testing_tent"
+    }
+  ],
+  "spawners": {
+    "monster": [
+      {
+        "type": "alienscience:alien",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 5
+      }
+    ],
+    "creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "player_spawn_friendly": false
+}

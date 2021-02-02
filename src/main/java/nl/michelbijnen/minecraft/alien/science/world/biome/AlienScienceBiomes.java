@@ -10,7 +10,8 @@ import nl.michelbijnen.minecraft.alien.science.Constants;
 public class AlienScienceBiomes {
 
     public static class Moon {
-        public static final RegistryKey<Biome> MOON_PLAINS = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.MOON_PLAINS));
+        public static final RegistryKey<Biome> MOON_PLAINS = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.PLAINS));
+        public static final RegistryKey<Biome> MOON_PLAINS_ROCKS = RegistryKey.of(Registry.BIOME_KEY, new Identifier(Constants.MODID, Constants.Dimension.Moon.PLAINS_ROCKS));
 
         private static void init() {
         }

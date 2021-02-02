@@ -1,0 +1,14 @@
+{
+  "config": {
+    "top_material": {
+      "Name": "alienscience:moon_stone"
+    },
+    "under_material": {
+      "Name": "alienscience:moon_stone"
+    },
+    "underwater_material": {
+      "Name": "alienscience:moon_stone"
+    }
+  },
+  "type": "minecraft:default"
+}

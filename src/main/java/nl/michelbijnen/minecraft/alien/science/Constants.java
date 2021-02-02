@@ -42,7 +42,8 @@ public class Constants {
 
         public static class Moon {
             public static final String NAME = "moon";
-            public static final String MOON_PLAINS = "moon_plains";
+            public static final String PLAINS = "moon_plains";
+            public static final String PLAINS_ROCKS = "moon_plains_rocks";
         }
     }
 
