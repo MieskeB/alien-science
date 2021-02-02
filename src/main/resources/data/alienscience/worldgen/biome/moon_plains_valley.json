@@ -38,21 +38,9 @@
     []
   ],
   "starts": [
-    {
-      "config": {
-      },
-      "type": "alienscience:testing_tent"
-    }
   ],
   "spawners": {
-    "monster": [
-      {
-        "type": "alienscience:alien",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 5
-      }
-    ],
+    "monster": [],
     "creature": [],
     "water_creature": [],
     "water_ambient": [],

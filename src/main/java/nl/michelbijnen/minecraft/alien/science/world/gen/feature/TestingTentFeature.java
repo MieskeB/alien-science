@@ -17,7 +17,7 @@ import nl.michelbijnen.minecraft.alien.science.entity.AlienScienceEntityTypes;
 import java.util.List;
 
 public class TestingTentFeature extends JigsawFeature {
-    private static final List<SpawnSettings.SpawnEntry> MONSTER_SPAWNS = ImmutableList.<SpawnSettings.SpawnEntry>builder().add(new SpawnSettings.SpawnEntry(AlienScienceEntityTypes.ALIEN, 1, 1, 2)).build();
+    private static final List<SpawnSettings.SpawnEntry> MONSTER_SPAWNS = ImmutableList.<SpawnSettings.SpawnEntry>builder().add(new SpawnSettings.SpawnEntry(AlienScienceEntityTypes.ALIEN, 100, 3, 6)).build();
 
     public TestingTentFeature(Codec<StructurePoolFeatureConfig> codec) {
         super(codec, 0, true, true);

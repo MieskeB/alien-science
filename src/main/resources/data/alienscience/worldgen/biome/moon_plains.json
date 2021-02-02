@@ -28,9 +28,7 @@
     [],
     [],
     [],
-    [
-
-    ],
+    [],
     [],
     [
       "alienscience:moon_ore"
@@ -42,19 +40,14 @@
   "starts": [
     {
       "config": {
+        "start_pool": "alienscience:testing_tent_base/base",
+        "size": 10
       },
       "type": "alienscience:testing_tent"
     }
   ],
   "spawners": {
-    "monster": [
-      {
-        "type": "alienscience:alien",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 5
-      }
-    ],
+    "monster": [],
     "creature": [],
     "water_creature": [],
     "water_ambient": [],
