@@ -54,6 +54,11 @@ public class Constants {
             public static final String PATH = "testing_tent/testing_tent";
             public static final String PIECE = "testing_tent_piece";
         }
+
+        public static class MoonBase {
+            public static final String NAME = "moon_base";
+            public static final String PIECE = "moon_base_piece";
+        }
     }
 
     public static class Feature {
@@ -69,5 +74,15 @@ public class Constants {
 
     public static class Carver {
         public static final String MOON_CAVE = "moon_cave";
+    }
+
+    public static class Sound {
+        public static class Music {
+            public static final String MOON = "music.moon";
+        }
+    }
+
+    public static class LootTables {
+        public static final String MOON_BASE_BASIC_CHEST = "chests/moon_base/basic_chest";
     }
 }

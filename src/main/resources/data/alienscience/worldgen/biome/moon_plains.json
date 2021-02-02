@@ -7,7 +7,7 @@
   "category": "none",
   "effects": {
     "music": {
-      "sound": "",
+      "sound": "alienscience:music.moon",
       "min_delay": 1200,
       "max_delay": 3600,
       "replace_current_music": true
@@ -40,14 +40,21 @@
   "starts": [
     {
       "config": {
-        "start_pool": "alienscience:testing_tent_base/base",
+        "start_pool": "alienscience:moon_base_base/base",
         "size": 10
       },
-      "type": "alienscience:testing_tent"
+      "type": "alienscience:moon_base"
     }
   ],
   "spawners": {
-    "monster": [],
+    "monster": [
+      {
+        "type": "alienscience:alien",
+        "weight": 1,
+        "minCount": 0,
+        "maxCount": 3
+      }
+    ],
     "creature": [],
     "water_creature": [],
     "water_ambient": [],

@@ -1,5 +1,5 @@
 {
-  "name": "alienscience:testing_tent_base/entrances",
+  "name": "alienscience:testing_tent_base/base",
   "fallback": "minecraft:empty",
   "elements": [
     {

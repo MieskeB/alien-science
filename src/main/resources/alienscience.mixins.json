@@ -6,7 +6,8 @@
   "mixins": [
     "BlockStateProviderTypeAccessor",
     "BuiltinBiomesAccessor",
-    "DimensionTypeMixin"
+    "DimensionTypeMixin",
+    "LootTablesAccessor"
   ],
   "client": [
     "client.WorldRendererMixin"

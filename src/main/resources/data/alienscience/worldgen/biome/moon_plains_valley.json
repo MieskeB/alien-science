@@ -7,7 +7,7 @@
   "category": "none",
   "effects": {
     "music": {
-      "sound": "",
+      "sound": "alienscience:music.moon",
       "min_delay": 1200,
       "max_delay": 3600,
       "replace_current_music": true

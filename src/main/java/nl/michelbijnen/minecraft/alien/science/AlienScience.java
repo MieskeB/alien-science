@@ -5,8 +5,9 @@ import nl.michelbijnen.minecraft.alien.science.block.AlienScienceBlock;
 import nl.michelbijnen.minecraft.alien.science.entity.AlienScienceEntityTypes;
 import nl.michelbijnen.minecraft.alien.science.group.AlienScienceGroup;
 import nl.michelbijnen.minecraft.alien.science.item.AlienScienceItem;
-import nl.michelbijnen.minecraft.alien.science.registers.RegisterItems;
+import nl.michelbijnen.minecraft.alien.science.loot.AlienScienceLootTable;
 import nl.michelbijnen.minecraft.alien.science.server.command.AlienScienceCommands;
+import nl.michelbijnen.minecraft.alien.science.sound.AlienScienceSound;
 import nl.michelbijnen.minecraft.alien.science.structure.AlienScienceStructure;
 import nl.michelbijnen.minecraft.alien.science.world.biome.AlienScienceBiomes;
 import nl.michelbijnen.minecraft.alien.science.world.dimension.AlienScienceDimensions;
@@ -20,10 +21,7 @@ public class AlienScience implements ModInitializer {
         AlienScienceGroup.register();
         AlienScienceBlock.register();
         AlienScienceItem.register();
-
-        //TODO move this in future to structure file
-//        RegisterItems.register();
-
+        AlienScienceSound.register();
         AlienScienceBiomes.register();
         AlienScienceDimensions.register();
         AlienScienceCommands.register();
@@ -31,5 +29,6 @@ public class AlienScience implements ModInitializer {
         AlienScienceEntityTypes.register();
         AlienScienceStructure.register();
         AlienScienceCarver.register();
+        AlienScienceLootTable.register();
     }
 }

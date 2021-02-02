@@ -1,0 +1,7 @@
+{
+  "config": {
+    "start_pool": "alienscience:moon_base_base/base",
+    "size": 10
+  },
+  "type": "alienscience:moon_base"
+}
